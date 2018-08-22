@@ -1,10 +1,15 @@
 class Dog 
   @@all = []
   
-  def initialize
+  def initialize(name)
+    @name = name
     @@all << self
   end
   
+  def self.all 
+    @@all.each do |name|
+      puts name.all
+  end
   
   
   
